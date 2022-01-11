@@ -24,15 +24,24 @@ to [MadAnalysis 5](https://github.com/MadAnalysis/madanalysis5) during the tools
     {
         "name"          : "analysis name",
         "description"   : "analysis description",
-        "code_url"      : "location of the code",
-        "detector_card" : "detector card url",
+        "url"           : {
+            "cpp"      : "location of the code",
+            "header"   : "location of the header file",
+            "info"     : "location of the info file",
+            "json"     : [
+                {
+                    "name" : "name of the json extension",
+                    "url" : "location of the json file for full likelihoods"
+                }
+            ],
+            "detector" : "location of the detector card"
+        },
         "padversion"    : "PAD version of the analysis e.g. vSFS, v1.2, v1.1 etc.",
         "ma5version"    : "minimum madanalysis version required by the analysis",
         "gcc"           : "minimum c++ version required by the analysis",
         "bibtex"        : [
             "bibliography dedicated to the analysis"
         ]
-    },
-    { ... },
+    }
 ]
 ```
