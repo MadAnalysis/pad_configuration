@@ -1,0 +1,701 @@
+[
+    {
+        "name": "atlas_exot_2014_06",
+        "description": "ATLAS -  8 TeV - Mono-photon (20.3/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4408",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4407",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4409",
+            "json": [],
+            "detector": {
+                "name": "atlas_exot_2014_06",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/4405"
+            }
+        },
+        "padversion": "v1.1",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "atlas_exot_2015_03",
+        "description": "ATLAS - 13 TeV - Mono-jet (3.2/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4437",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4439",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4440",
+            "json": [],
+            "detector": {
+                "name": "atlas_exot_2015_03",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/4428"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "atlas_exot_2016_25",
+        "description": "ATLAS - 13 TeV - Mono-Higgs in the bbar channel (36.1/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4419",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4417",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4416",
+            "json": [],
+            "detector": {
+                "name": "atlas_exot_2016_25",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/4418"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "atlas_exot_2016_27",
+        "description": "ATLAS - 13 TeV - Mono-jet (36.1/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4413",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4411",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4412",
+            "json": [],
+            "detector": {
+                "name": "atlas_exot_2016_27",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/4414"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "atlas_exot_2016_32",
+        "description": "ATLAS - 13 TeV - Mono-photon (36.1/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4425",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4422",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4424",
+            "json": [],
+            "detector": {
+                "name": "atlas_exot_2016_32",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/4423"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "atlas_exot_2018_30",
+        "description": "ATLAS - 13 TeV - W' into lepton + neutrino (139/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/1524",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/1523",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/1526",
+            "json": [],
+            "detector": {
+                "name": "atlas_exot_2018_30",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/1525"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "atlas_susy_2015_06",
+        "description": "ATLAS - 13 TeV - Multi-jet + met (2-6 jets, 3.2/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4445",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4442",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4443",
+            "json": [],
+            "detector": {
+                "name": "atlas_exot_2015_03",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/4428"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "atlas_susy_2016_07",
+        "description": "ATLAS - 13 TeV - Multi-jet + met (36.1/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4430",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4427",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4429",
+            "json": [],
+            "detector": {
+                "name": "atlas_exot_2015_03",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/4428"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "atlas_susy_2018_04",
+        "description": "ATLAS - 13 TeV - Staus in the ditau + met channel (139/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/1580",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/1582",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/1633",
+            "json": [
+                {
+                    "name": "combined",
+                    "url": "https://dataverse.uclouvain.be/api/access/datafile/1634"
+                }
+            ],
+            "detector": {
+                "name": "atlas_susy_2018_04",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/1579"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "atlas_susy_2018_17",
+        "description": "ATLAS - 13 TeV - At least 8 jets + met (139/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/9171",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/9164",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/9166",
+            "json": [],
+            "detector": {
+                "name": "atlas_susy_2018_17",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/9165"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "atlas_susy_2018_06",
+        "description": "ATLAS - 13 TeV - Electroweakinos with jigsaw variables (139/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/1531",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/1529",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4765",
+            "json": [
+                {
+                    "name": "all",
+                    "url": "https://dataverse.uclouvain.be/api/access/datafile/4402"
+                }
+            ],
+            "detector": {
+                "name": "atlas_susy_2018_06",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/1530"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "atlas_susy_2018_32",
+        "description": "ATLAS - 13 TeV - Sleptons/ewkinos with 2l+met (139/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/1561",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/1560",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/1577",
+            "json": [],
+            "detector": {
+                "name": "atlas_susy_2018_32",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/1559"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "atlas_susy_2019_08",
+        "description": "ATLAS - 13 TeV - H (in bbar) + lepton + met (139/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/1573",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/1571",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4755",
+            "json": [
+                {
+                    "name": "all",
+                    "url": "https://dataverse.uclouvain.be/api/access/datafile/4403"
+                }
+            ],
+            "detector": {
+                "name": "atlas_susy_2019_08",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/1574"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "atlas_conf_2016_086",
+        "description": "ATLAS - 13 TeV - Dark matter production with a bbar pair (13.3/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4432",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4433",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4434",
+            "json": [],
+            "detector": {
+                "name": "atlas_conf_2016_086",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/4435"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "atlas_conf_2019_040",
+        "description": "ATLAS - 13 TeV - Multi-jet + met (139/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4452",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4451",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4453",
+            "json": [],
+            "detector": {
+                "name": "atlas_exot_2015_03",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/4428"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "atlas_conf_2020_002",
+        "description": "ATLAS - 13 TeV - At least 8 jets + met (139/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4760",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4757",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4761",
+            "json": [],
+            "detector": {
+                "name": "atlas_conf_2020_002",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/4764"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "cms_b2g_12_012",
+        "description": "CMS   -  8 TeV - X_{5/3} partners in the SS2L channel (19.5/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4458",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4455",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4456",
+            "json": [],
+            "detector": {
+                "name": "cms_b2g_12_012",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/4457"
+            }
+        },
+        "padversion": "v1.1",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "cms_b2g_12_022",
+        "description": "CMS   -  8 TeV - Hadronic monotops (19.7/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4461",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4463",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4462",
+            "json": [],
+            "detector": {
+                "name": "cms_b2g_14_004",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/4460"
+            }
+        },
+        "padversion": "v1.1",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "cms_b2g_14_004",
+        "description": "CMS   -  8 TeV - Dark matter production with a ttbar pair (19.7/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4466",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4468",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4467",
+            "json": [],
+            "detector": {
+                "name": "cms_b2g_14_004",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/4460"
+            }
+        },
+        "padversion": "v1.1",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "cms_b2g_17_014",
+        "description": "CMS   - 13 TeV - Vector-like quarks with charge 5/3 with same-sign dileptons (35.9/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4747",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4749",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4748",
+            "json": [],
+            "detector": {
+                "name": "cms_b2g_17_014",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/4750"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "cms_exo_12_047",
+        "description": "CMS   -  8 TeV - Mono-photon (19.6/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4475",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4474",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4472",
+            "json": [],
+            "detector": {
+                "name": "cms_b2g_12_012",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/4457"
+            }
+        },
+        "padversion": "v1.1",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "cms_exo_12_048",
+        "description": "CMS   -  8 TeV - Mono-jet (19.7/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4480",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4479",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4478",
+            "json": [],
+            "detector": {
+                "name": "cms_b2g_12_012",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/4457"
+            }
+        },
+        "padversion": "v1.1",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "cms_exo_16_010",
+        "description": "CMS   - 13 TeV - Mono-Z (2.3/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4483",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4485",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4486",
+            "json": [],
+            "detector": {
+                "name": "cms_exo_16_010",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/4484"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "cms_exo_16_012",
+        "description": "CMS   - 13 TeV - Mono-Higgs in the diphoton channel (2.3/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4490",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4491",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4489",
+            "json": [],
+            "detector": {
+                "name": "cms_exo_16_012",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/4488"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "cms_exo_16_022",
+        "description": "CMS   - 13 TeV - Displaced leptons (2.6/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4530",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4527",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4529",
+            "json": [],
+            "detector": {
+                "name": "cms_exo_16_022",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/4528"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "cms_exo_17_015",
+        "description": "CMS   - 13 TeV - Leptoquark+DM in the 1 mu+1jet + met channel (77.4/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/1540",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/1538",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/1541",
+            "json": [],
+            "detector": {
+                "name": "cms_exo_17_015",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/1539"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "cms_exo_17_030",
+        "description": "CMS   - 13 TeV - Pairs of resonances decaying into a trijet system (35.9/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/1592",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/1595",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/1594",
+            "json": [],
+            "detector": {
+                "name": "cms_exo_17_030",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/1593"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "cms_exo_19_002",
+        "description": "CMS   - 13 TeV - Type III seesaw and top-philic scalars with multi-leptonic probes (137/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/9181",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/9183",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/9180",
+            "json": [],
+            "detector": {
+                "name": "cms_exo_19_002",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/9182"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "cms_exo_20_004",
+        "description": "CMS   - 13 TeV - Mono-jet (137/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4639",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4640",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/9161",
+            "json": [],
+            "detector": {
+                "name": "cms_exo_20_004",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/4625"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "cms_hig_18_011",
+        "description": "CMS   - 13 TeV - Exotic Higgs decays (H to aa to 2mu 2b) (35.9/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/1553",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/1552",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/1551",
+            "json": [],
+            "detector": {
+                "name": "cms_hig_18_011",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/1550"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "cms_sus_16_033",
+        "description": "CMS   - 13 TeV - Supersymmetry in the multi-jets + met channel (35.9/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4535",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4533",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4536",
+            "json": [],
+            "detector": {
+                "name": "cms_sus_16_033",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/4534"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "cms_sus_16_039",
+        "description": "CMS   - 13 TeV - Electroweakinos in the multi-leptons + met channel (35.9/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4540",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4539",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4767",
+            "json": [],
+            "detector": {
+                "name": "cms_sus_16_039",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/4538"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "cms_sus_16_048",
+        "description": "CMS   - 13 TeV - Supersymmetry in the one soft leptons + met channel (35.9/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/1516",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/1513",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/1514",
+            "json": [],
+            "detector": {
+                "name": "cms_sus_16_048",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/1515"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "cms_sus_16_052",
+        "description": "CMS   - 13 TeV - Supersymmetry in the 1 lepton + jets +met channel (35.9/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4544",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4546",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4545",
+            "json": [],
+            "detector": {
+                "name": "cms_sus_16_052",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/4543"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "cms_sus_17_001",
+        "description": "CMS   - 13 TeV - stops in the OS2L + jets + MET channel (35.9/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4550",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4551",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4548",
+            "json": [],
+            "detector": {
+                "name": "cms_exo_16_010",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/4484"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "cms_sus_19_006",
+        "description": "CMS   - 13 TeV - SUSY in the HT / missing HT channel (137/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/1632",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/1567",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/1635",
+            "json": [],
+            "detector": {
+                "name": "cms_sus_19_006",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/1568"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "cms_top_17_009",
+        "description": "CMS   - 13 TeV - 4top analysis in the SS2L and multilepton channel (35.9/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4553",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4556",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4555",
+            "json": [],
+            "detector": {
+                "name": "cms_top_17_009",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/4554"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "cms_top_18_003",
+        "description": "CMS   - 13 TeV - 4top analysis in the SS2L and multilepton channel (137/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/1534",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/1535",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/1533",
+            "json": [],
+            "detector": {
+                "name": "cms_top_18_003",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/1536"
+            }
+        },
+        "padversion": "v1.2",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    }
+]

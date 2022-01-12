@@ -1,0 +1,159 @@
+[
+    {
+        "name": "atlas_exot_2018_05",
+        "description": "ATLAS - 13 TeV - di-jet resonance with a photon (76.8/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/9213",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/9215",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/9214",
+            "json": [],
+            "detector": {
+                "name": "atlas_exot_2018_05",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/9216"
+            }
+        },
+        "padversion": "vSFS",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "atlas_susy_2016_07",
+        "description": "ATLAS - 13 TeV - multijet + met (36.1/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4627",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4628",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4629",
+            "json": [],
+            "detector": {
+                "name": "atlas_susy_2016_07",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/1606"
+            }
+        },
+        "padversion": "vSFS",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "atlas_susy_2017_04_2body",
+        "description": "ATLAS - 13 TeV - displaced vertices with opposite charge leptons, 2-body decays (32.8/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/9205",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/9206",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/9211",
+            "json": [],
+            "detector": {
+                "name": "atlas_susy_2017_04",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/9209"
+            }
+        },
+        "padversion": "vSFS",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "atlas_susy_2017_04_3body",
+        "description": "ATLAS - 13 TeV - displaced vertices with opposite charge leptons, 3-body decays (32.8/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/9208",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/9207",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/9210",
+            "json": [],
+            "detector": {
+                "name": "atlas_susy_2017_04",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/9209"
+            }
+        },
+        "padversion": "vSFS",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "atlas_susy_2018_31",
+        "description": "ATLAS - 13 TeV - multibottoms + MET (139/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/1600",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/1604",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/1598",
+            "json": [
+                {
+                    "name": "SRA",
+                    "url": "https://dataverse.uclouvain.be/api/access/datafile/1603"
+                },
+                {
+                    "name": "SRB",
+                    "url": "https://dataverse.uclouvain.be/api/access/datafile/1599"
+                },
+                {
+                    "name": "SRC",
+                    "url": "https://dataverse.uclouvain.be/api/access/datafile/1602"
+                }
+            ],
+            "detector": {
+                "name": "atlas_susy_2018_31",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/1601"
+            }
+        },
+        "padversion": "vSFS",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "atlas_conf_2019_040",
+        "description": "ATLAS - 13 TeV - multijet + met (139/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4630",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4631",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4632",
+            "json": [],
+            "detector": {
+                "name": "atlas_susy_2016_07",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/1606"
+            }
+        },
+        "padversion": "vSFS",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "cms_sus_16_048",
+        "description": "CMS   - 13 TeV - Soft dilepton (35.9/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/4635",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/4634",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/4633",
+            "json": [],
+            "detector": {
+                "name": "cms_sus_16_048",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/1616"
+            }
+        },
+        "padversion": "vSFS",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    },
+    {
+        "name": "cms_exo_16_022",
+        "description": "CMS   - 13 TeV - Displaced leptons (2.6/fb)",
+        "url": {
+            "cpp": "https://dataverse.uclouvain.be/api/access/datafile/9188",
+            "header": "https://dataverse.uclouvain.be/api/access/datafile/9189",
+            "info": "https://dataverse.uclouvain.be/api/access/datafile/9190",
+            "json": [],
+            "detector": {
+                "name": "cms_exo_19_022",
+                "url": "https://dataverse.uclouvain.be/api/access/datafile/9191"
+            }
+        },
+        "padversion": "vSFS",
+        "ma5version": "v1.9.60",
+        "gcc": "98",
+        "bibtex": []
+    }
+]
