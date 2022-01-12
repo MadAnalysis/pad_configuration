@@ -1,44 +1,18 @@
 {
+  "$id": "https://github.com/MadAnalysis/pad_configuration/blob/main/src/pad_configuration/meta/data_structure.json",
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "http://example.com/example.json",
-  "type": "array",
-  "title": "The root schema",
-  "description": "The root schema comprises the entire JSON document.",
   "default": [],
+  "description": "PAD configuration metadata structure",
+  "title": "The root schema",
+  "type": "array",
   "additionalItems": true,
   "items": {
     "$id": "#/items",
     "anyOf": [
       {
         "$id": "#/items/anyOf/0",
-        "type": "object",
-        "title": "The first anyOf schema",
-        "description": "An explanation about the purpose of this instance.",
         "default": {},
-        "examples": [
-          {
-            "name": "analysis name",
-            "description": "analysis description",
-            "url": {
-              "cpp": "location of the code",
-              "header": "location of the header file",
-              "info": "location of the info file",
-              "json": [
-                {
-                  "name": "name of the json extension",
-                  "url": "location of the json file for full likelihoods"
-                }
-              ],
-              "detector": "location of the detector card"
-            },
-            "padversion": "PAD version of the analysis e.g. vSFS, v1.2, v1.1 etc.",
-            "ma5version": "minimum madanalysis version required by the analysis",
-            "gcc": "minimum c++ version required by the analysis",
-            "bibtex": [
-              "bibliography dedicated to the analysis"
-            ]
-          }
-        ],
+        "description": "An explanation about the purpose of this instance.",
         "required": [
           "name",
           "description",
@@ -48,47 +22,29 @@
           "gcc",
           "bibtex"
         ],
+        "title": "PAD entry",
+        "type": "object",
         "properties": {
           "name": {
             "$id": "#/items/anyOf/0/properties/name",
-            "type": "string",
-            "title": "Analysis name",
-            "description": "Name of the analysis.",
             "default": "",
-            "examples": [
-              "atlas_susy_2018_031"
-            ]
+            "title": "Analysis name",
+            "type": "string"
           },
           "description": {
             "$id": "#/items/anyOf/0/properties/description",
-            "type": "string",
-            "title": "Description of the analysis.",
-            "description": "Collaboration name - CoM energy - Short description - Luminosity",
             "default": "",
+            "description": "Collaboration name - CoM energy - Short description - Luminosity.",
             "examples": [
               "ATLAS - 13 TeV - Multi-jet + met (36.1/fb)"
-            ]
+            ],
+            "title": "Description of the analysis.",
+            "type": "string"
           },
           "url": {
             "$id": "#/items/anyOf/0/properties/url",
-            "type": "object",
-            "title": "Analysis location",
-            "description": "Includes url for all the files that will be used for the analysis.",
             "default": {},
-            "examples": [
-              {
-                "cpp": "https://dataverse.uclouvain.be/api/access/datafile/9208",
-                "header": "https://dataverse.uclouvain.be/api/access/datafile/9207",
-                "info": "https://dataverse.uclouvain.be/api/access/datafile/9210",
-                "json": [
-                  {
-                    "name": "combined",
-                    "url": "https://dataverse.uclouvain.be/api/access/datafile/1634"
-                  }
-                ],
-                "detector": "https://dataverse.uclouvain.be/api/access/datafile/1601"
-              }
-            ],
+            "description": "Includes url for all the files that will be used for the analysis.",
             "required": [
               "cpp",
               "header",
@@ -96,51 +52,36 @@
               "json",
               "detector"
             ],
+            "title": "Analysis location",
+            "type": "object",
             "properties": {
               "cpp": {
                 "$id": "#/items/anyOf/0/properties/url/properties/cpp",
-                "type": "string",
-                "title": "Analysis file",
-                "description": "URL of the main analysis file.",
                 "default": "",
-                "examples": [
-                  "https://dataverse.uclouvain.be/api/access/datafile/9208"
-                ]
+                "description": "URL of the main analysis file.",
+                "title": "The cpp schema",
+                "type": "string"
               },
               "header": {
                 "$id": "#/items/anyOf/0/properties/url/properties/header",
-                "type": "string",
-                "title": "Header file",
-                "description": "URL of the header file.",
                 "default": "",
-                "examples": [
-                  "https://dataverse.uclouvain.be/api/access/datafile/9207"
-                ]
+                "description": "URL of the header file.",
+                "title": "The header schema",
+                "type": "string"
               },
               "info": {
                 "$id": "#/items/anyOf/0/properties/url/properties/info",
-                "type": "string",
-                "title": "INFO file",
-                "description": "URL of the info file.",
                 "default": "",
-                "examples": [
-                  "https://dataverse.uclouvain.be/api/access/datafile/9210"
-                ]
+                "description": "URL of the info file.",
+                "title": "The info schema",
+                "type": "string"
               },
               "json": {
                 "$id": "#/items/anyOf/0/properties/url/properties/json",
-                "type": "array",
-                "title": "JSON file",
-                "description": "URL for the full or simplified likelihoods.",
                 "default": [],
-                "examples": [
-                  [
-                    {
-                      "name": "combined",
-                      "url": "https://dataverse.uclouvain.be/api/access/datafile/1634"
-                    }
-                  ]
-                ],
+                "description": "name and URL for the full or simplified likelihoods.",
+                "title": "The json schema",
+                "type": "array",
                 "additionalItems": true,
                 "items": {
                   "$id": "#/items/anyOf/0/properties/url/properties/json/items",
@@ -148,13 +89,13 @@
                     {
                       "$id": "#/items/anyOf/0/properties/url/properties/json/items/anyOf/0",
                       "type": "object",
-                      "title": "JSON file entry",
-                      "description": "Each entry includes the name extension and url of the file.",
+                      "title": "The first anyOf schema",
+                      "description": "An explanation about the purpose of this instance.",
                       "default": {},
                       "examples": [
                         {
-                          "name": "combined",
-                          "url": "https://dataverse.uclouvain.be/api/access/datafile/1634"
+                          "name": "name of the json extension",
+                          "url": "location of the json file for full likelihoods"
                         }
                       ],
                       "required": [
@@ -164,23 +105,17 @@
                       "properties": {
                         "name": {
                           "$id": "#/items/anyOf/0/properties/url/properties/json/items/anyOf/0/properties/name",
-                          "type": "string",
-                          "title": "Name of the JSON file",
-                          "description": "Extension name of the file that comes after the analysis name",
-                          "default": "all",
-                          "examples": [
-                            "combined"
-                          ]
+                          "default": "",
+                          "description": "Extension name of the file that comes after the analysis name.",
+                          "title": "The name schema",
+                          "type": "string"
                         },
                         "url": {
                           "$id": "#/items/anyOf/0/properties/url/properties/json/items/anyOf/0/properties/url",
-                          "type": "string",
-                          "title": "URL of the json file",
-                          "description": "Location of the JSON file.",
                           "default": "",
-                          "examples": [
-                            "https://dataverse.uclouvain.be/api/access/datafile/1634"
-                          ]
+                          "description": "Location of the JSON file.",
+                          "title": "The url schema",
+                          "type": "string"
                         }
                       },
                       "additionalProperties": true
@@ -190,58 +125,65 @@
               },
               "detector": {
                 "$id": "#/items/anyOf/0/properties/url/properties/detector",
-                "type": "string",
+                "default": {},
+                "description": "name and URL of the detector card",
+                "required": [
+                  "name",
+                  "url"
+                ],
                 "title": "The detector schema",
-                "description": "URL of the detector card.",
-                "default": "",
-                "examples": [
-                  "https://dataverse.uclouvain.be/api/access/datafile/1634"
-                ]
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "$id": "#/items/anyOf/0/properties/url/properties/detector/properties/name",
+                    "default": "",
+                    "description": "name of the detector card",
+                    "title": "The name schema",
+                    "type": "string"
+                  },
+                  "url": {
+                    "$id": "#/items/anyOf/0/properties/url/properties/detector/properties/url",
+                    "default": "",
+                    "description": "location of the detector card",
+                    "title": "The url schema",
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": true
               }
             },
             "additionalProperties": true
           },
           "padversion": {
             "$id": "#/items/anyOf/0/properties/padversion",
-            "type": "string",
-            "title": "The padversion schema",
-            "description": "Version of the PAD",
             "default": "",
+            "description": "Version of the PAD",
             "examples": [
-              "vSFS"
-            ]
+              "PAD version of the analysis e.g. vSFS, v1.2, v1.1 etc."
+            ],
+            "title": "The padversion schema",
+            "type": "string"
           },
           "ma5version": {
             "$id": "#/items/anyOf/0/properties/ma5version",
-            "type": "string",
-            "title": "The ma5version schema",
-            "description": "Minimum Ma5 version to be used.",
             "default": "",
-            "examples": [
-              "v1.9.60"
-            ]
+            "description": "Version of the local ma5",
+            "title": "The ma5version schema",
+            "type": "string"
           },
           "gcc": {
             "$id": "#/items/anyOf/0/properties/gcc",
-            "type": "string",
-            "title": "The gcc schema",
-            "description": "Minimum c++ version required.",
             "default": "",
-            "examples": [
-              "11"
-            ]
+            "description": "gcc compiler version",
+            "title": "The gcc schema",
+            "type": "string"
           },
           "bibtex": {
             "$id": "#/items/anyOf/0/properties/bibtex",
-            "type": "array",
-            "title": "The bibtex schema",
-            "description": "Bibtex entries",
             "default": [],
-            "examples": [
-              [
-                "bibliography dedicated to the analysis"
-              ]
-            ],
+            "description": "Bibliography related to the analysis.",
+            "title": "The bibtex schema",
+            "type": "array",
             "additionalItems": true,
             "items": {
               "$id": "#/items/anyOf/0/properties/bibtex/items",
@@ -250,7 +192,7 @@
                   "$id": "#/items/anyOf/0/properties/bibtex/items/anyOf/0",
                   "type": "string",
                   "title": "The first anyOf schema",
-                  "description": "Bibliography in bibtex format.",
+                  "description": "An explanation about the purpose of this instance.",
                   "default": "",
                   "examples": [
                     "bibliography dedicated to the analysis"
