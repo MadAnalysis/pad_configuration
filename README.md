@@ -16,6 +16,9 @@ metadata configuration to install the analysis codes and their validation materi
 This repository is designed to build such information flow 
 to [MadAnalysis 5](https://github.com/MadAnalysis/madanalysis5) during the toolset installation.
 
+## Installation 
+
+ - `$ pip install -e .` or `$ make install` 
 
 ## Metadata structure
 
@@ -34,7 +37,10 @@ to [MadAnalysis 5](https://github.com/MadAnalysis/madanalysis5) during the tools
                     "url" : "location of the json file for full likelihoods"
                 }
             ],
-            "detector" : "location of the detector card"
+            "detector" : {
+                "name" : "name of the detector card",
+                "url" : "location of the detector card"
+            }
         },
         "padversion"    : "PAD version of the analysis e.g. vSFS, v1.2, v1.1 etc.",
         "ma5version"    : "minimum madanalysis version required by the analysis",
@@ -45,3 +51,28 @@ to [MadAnalysis 5](https://github.com/MadAnalysis/madanalysis5) during the tools
     }
 ]
 ```
+
+## Usage
+```python
+from pad_configuration import Configuration
+config = Configuration("PADForSFS")
+print(config)
+```
+will output the following;
+```
+#    Analysis            | Description
+#                        |
+atlas_exot_2018_05       | ATLAS - 13 TeV - di-jet resonance with a photon (76.8/fb)
+atlas_susy_2016_07       | ATLAS - 13 TeV - multijet + met (36.1/fb)
+atlas_susy_2017_04_2body | ATLAS - 13 TeV - displaced vertices with opposite charge leptons, 2-body decays (32.8/fb)
+atlas_susy_2017_04_3body | ATLAS - 13 TeV - displaced vertices with opposite charge leptons, 3-body decays (32.8/fb)
+atlas_susy_2018_31       | ATLAS - 13 TeV - multibottoms + MET (139/fb)
+atlas_conf_2019_040      | ATLAS - 13 TeV - multijet + met (139/fb)
+cms_sus_16_048           | CMS   - 13 TeV - Soft dilepton (35.9/fb)
+cms_exo_16_022           | CMS   - 13 TeV - Displaced leptons (2.6/fb)
+```
+
+## TODO
+ - [ ] Expand the documentations
+ - [ ] Add individual bibliographies to each entry
+ - [ ] Add `PADForMA5tune`
