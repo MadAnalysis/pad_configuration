@@ -15,7 +15,9 @@
         "padversion": "v1.1",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{atlas_exot_2014_06,\n    author = {Barducci, Daniele},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Implementation of a search for dark matter in the mono-photon channel (20.3 fb-1; 8 TeV; ATLAS-EXOT-2014-06)}},\n    year = {2021},\n    version = {V1},\n    doi = {10.14428/DVN/LVOXP5},\n    url = {https://doi.org/10.14428/DVN/LVOXP5}\n}\n"
+        ]
     },
     {
         "name": "atlas_exot_2015_03",
@@ -33,7 +35,9 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{atlas_exot_2015_03,\n    author = {Sengupta, Dipan},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Implementation of a search for dark matter in the mono-jet channel (3.2 fb-1; 13 TeV; ATLAS-EXOT-2015-03)}},\n    year = {2021},\n    version = {V1},\n    doi = {10.14428/DVN/3M87GD},\n    url = {https://doi.org/10.14428/DVN/3M87GD}\n}\n"
+        ]
     },
     {
         "name": "atlas_exot_2016_25",
@@ -51,7 +55,9 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{atlas_exot_2016_25,\n    author = {Jeon, Sihyun and Kang, Yoojin and Lee, Gyunggoo and Yu, Chaehyun},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Implementation of a search for dark matter in the mono-Higgs channel (36.1 fb-1; 13 TeV; ATLAS-EXOT-2016-25)}},\n    year = {2021},\n    version = {V1},\n    doi = {10.14428/DVN/KAAYFM},\n    url = {https://doi.org/10.14428/DVN/KAAYFM}\n}\n"
+        ]
     },
     {
         "name": "atlas_exot_2016_27",
@@ -69,7 +75,9 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{atlas_exot_2016_27,\n    author = {Sengupta, Dipan},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Implementation of a search for dark matter in the mono-jet channel (36.1 fb-1; 13 TeV; ATLAS-EXOT-2014-06)}},\n    year = {2021},\n    version = {V1},\n    doi = {10.14428/DVN/DFQPGU},\n    url = {https://doi.org/10.14428/DVN/DFQPGU}\n}\n"
+        ]
     },
     {
         "name": "atlas_exot_2016_32",
@@ -87,7 +95,9 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{atlas_exot_2016_32,\n    author = {Baek, Seungwon and Jung, Tae Hyun},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Implementation of a search for dark matter in the mono-photon channel (36.1 fb-1; 13 TeV; ATLAS-EXOT-2016-32)}},\n    year = {2021},\n    version = {V1},\n    doi = {10.14428/DVN/G8D0ED},\n    url = {https://doi.org/10.14428/DVN/G8D0ED}\n}\n"
+        ]
     },
     {
         "name": "atlas_exot_2018_30",
@@ -105,7 +115,10 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{atlas_exot_2018_30,\n    author    = {Park, Kyungmin and Lee, SooJin and Jun, Won and Min, Ui},\n    publisher = {Open Data @ UCLouvain},\n    title     = {{Re-implementation of the W' into 1 lepton + missing energy analysis (139 fb-1; ATLAS-EXOT-2018-30)}},\n    year      = {2020},\n    version   = {V1},\n    doi       = {10.14428/DVN/GLWLTF},\n    url       = {https://doi.org/10.14428/DVN/GLWLTF}\n}\n",
+            "@article{Park:2020yyn,\n    author = \"Park, Kyungmin and Min, Ui and Lee, Soo Jin and Jun, Won\",\n    title = \"{Implementation of the ATLAS-EXOT-2018-030 analysis in the MadAnalysis 5 framework ($W\u2032$ boson into a lepton and a neutrino; 139 fb$^{\u22121}$)}\",\n    doi = \"10.1142/S0217732321410017\",\n    journal = \"Mod. Phys. Lett. A\",\n    volume = \"36\",\n    number = \"01\",\n    pages = \"2141001\",\n    year = \"2021\"\n}\n"
+        ]
     },
     {
         "name": "atlas_susy_2015_06",
@@ -123,7 +136,9 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{atlas_susy_2015_06,\n    author = {Fuks, Benjamin and Banerjee, Shankha and Zaldivar, Bryan},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Implementation of a search for squarks and gluinos in the multi-jet + missing energy channel (3.2 fb-1; 13 TeV; ATLAS-SUSY-2015-06)}},\n    year = {2021},\n    version = {V1},\n    doi = {10.14428/DVN/MHPXX4},\n    url = {https://doi.org/10.14428/DVN/MHPXX4}\n}\n"
+        ]
     },
     {
         "name": "atlas_susy_2016_07",
@@ -141,7 +156,9 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{atlas_susy_2016_07,\n    author = {Chalons, Guillaume and Reyes-Gonzalez, Humberto},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Implementation of a search for squarks and gluinos in the multi-jet + missing energy channel (36.1 fb-1; 13 TeV; ATLAS-SUSY-2016-07)}},\n    year = {2021},\n    version = {V1},\n    doi = {10.14428/DVN/I5IFG8},\n    url = {https://doi.org/10.14428/DVN/I5IFG8}\n}\n"
+        ]
     },
     {
         "name": "atlas_susy_2018_04",
@@ -164,7 +181,10 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{atlas_susy_2018_04,\nauthor = {Lim, Jongwon and Lu, Chih-Ting and Park, Jae-Hyeon and Park, Jiwon},\npublisher = {Open Data @ UCLouvain},\ntitle = {{Re-implementation of a search for staus in the ditau + MET channel (139 fb-1; ATLAS-SUSY-2018-04)}},\nyear = {2020},\nversion = {V3},\ndoi = {10.14428/DVN/UN3NND},\nurl = {https://doi.org/10.14428/DVN/UN3NND}\n}\n",
+            "@article{Lim:2021tzk,\n    author = \"Lim, Jongwon and Lu, Chih-Ting and Park, Jae-Hyeon and Park, Jiwon\",\n    title = \"{Implementation of the ATLAS-SUSY-2018-04 analysis in the MadAnalysis 5 framework (staus in the di-tau plus missing transverse energy channel; 139 fb$^{\u22121}$)}\",\n    doi = \"10.1142/S0217732321410091\",\n    journal = \"Mod. Phys. Lett. A\",\n    volume = \"36\",\n    number = \"01\",\n    pages = \"2141009\",\n    year = \"2021\"\n}\n"
+        ]
     },
     {
         "name": "atlas_susy_2018_17",
@@ -182,7 +202,9 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{atlas_susy_2018_17,\n    author    = {Murphy, Taylor},\n    publisher = {Open Data @ UCLouvain},\n    title     = {{Implementation of a search for supersymmetry in the multijet (at least 8 jets) + missing energy channel (139/fb; 13 TeV; ATLAS-SUSY-2018-17)}},\n    year      = {2021},\n    version   = {V1},\n    doi       = {10.14428/DVN/I2CZWU},\n    url       = {https://doi.org/10.14428/DVN/I2CZWU}\n}\n"
+        ]
     },
     {
         "name": "atlas_susy_2018_06",
@@ -205,7 +227,10 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{atlas_susy_2018_06,\n    author    = {Kim, Jinheung and Lee, Tae Gyu and Kim, Jeongwoo and Jang, Ho},\n    publisher = {Open Data @ UCLouvain},\n    title     = {{Re-implementation of the electroweakino search with Jigsaw variables (139 fb-1; ATLAS-SUSY-2018-06)}},\n    year      = {2020},\n    version   = {V2},\n    doi       = {10.14428/DVN/LYQMUJ},\n    url       = {https://doi.org/10.14428/DVN/LYQMUJ}\n}\n",
+            "@article{Kim:2020nrg,\n    author = \"Kim, Jinheung and Lee, Taegyu and Kim, Jeongwoo and Jang, Ho\",\n    title = \"{Implementation of the ATLAS-SUSY-2018-06 analysis in the MadAnalysis 5 framework (electroweakinos with Jigsaw variables; 139 fb$^{\u22121}$)}\",\n    doi = \"10.1142/S0217732321410042\",\n    journal = \"Mod. Phys. Lett. A\",\n    volume = \"36\",\n    number = \"01\",\n    pages = \"2141004\",\n    year = \"2021\"\n}\n"
+        ]
     },
     {
         "name": "atlas_susy_2018_32",
@@ -223,7 +248,10 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{atlas_susy_2018_32,\n    author    = {Fuks, Benjamin and Araz, Jack Y.},\n    publisher = {Open Data @ UCLouvain},\n    title     = {{Re-implementation of a search for sleptons and electroweakinos in the dilepton + MET channel (139 fb-1; ATLAS-SUSY-2018-32)}},\n    year      = {2020},\n    version   = {V3},\n    doi       = {10.14428/DVN/EA4S4D},\n    url       = {https://doi.org/10.14428/DVN/EA4S4D}\n}\n",
+            "@article{Araz:2020dlf,\n    author = \"Araz, Jack Y. and Fuks, Benjamin\",\n    title = \"{Implementation of the ATLAS-SUSY-2018-32 analysis (sleptons and electroweakinos with two leptons and missing transverse energy; 139 fb$^{\u22121}$)}\",\n    doi = \"10.1142/S0217732321410054\",\n    journal = \"Mod. Phys. Lett. A\",\n    volume = \"36\",\n    number = \"01\",\n    pages = \"2141005\",\n    year = \"2021\"\n}\n"
+        ]
     },
     {
         "name": "atlas_susy_2019_08",
@@ -246,7 +274,10 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{atlas_susy_2019_08,\n    author    = {Goodsell, Mark},\n    publisher = {Open Data @ UCLouvain},\n    title     = {{Re-implementation of the H (into b bbar) + 1 lepton + missing transverse momentum analysis (139 fb-1; ATLAS-SUSY-2019-08)}},\n    year      = {2020},\n    version   = {V3},\n    doi       = {10.14428/DVN/BUN2UX},\n    url       = {https://doi.org/10.14428/DVN/BUN2UX}\n}\n",
+            "@article{Goodsell:2020ddr,\n    author = \"Goodsell, Mark D.\",\n    title = \"{Implementation of the ATLAS-SUSY-2019-08 analysis in the MadAnalysis 5 framework (electroweakinos with a Higgs decay into a $b\\bar b$ pair, one lepton and missing transverse energy; 139 fb$^{\u22121}$)}\",\n    doi = \"10.1142/S0217732321410066\",\n    journal = \"Mod. Phys. Lett. A\",\n    volume = \"36\",\n    number = \"01\",\n    pages = \"2141006\",\n    year = \"2021\"\n}\n"
+        ]
     },
     {
         "name": "atlas_conf_2016_086",
@@ -264,7 +295,9 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{atlas_conf_2016_086,\n    author = {Fuks, Benjamin and Zumbihl, Maxime},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Implementation of a search for dark matter produced in assocation with b jets (13.3 fb-1; 13 TeV; ATLAS-EXOT-2016-25)}},\n    year = {2021},\n    version = {V1},\n    doi = {10.14428/DVN/ZKIVFR},\n    url = {https://doi.org/10.14428/DVN/ZKIVFR}\n}\n"
+        ]
     },
     {
         "name": "atlas_conf_2019_040",
@@ -282,7 +315,9 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{atlas_conf_2019_040,\n    author = {Ambrogi, Federico},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Implementation of a search for squarks and gluinos in the multi-jet + missing energy channel (139 fb-1; 13 TeV; ATLAS-CONF-2019-040)}},\n    year = {2021},\n    version = {V1},\n    doi = {10.14428/DVN/NW3NPG},\n    url = {https://doi.org/10.14428/DVN/NW3NPG}\n}\n"
+        ]
     },
     {
         "name": "atlas_conf_2020_002",
@@ -300,7 +335,10 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@data{atlas_conf_2020_002,\n    author = {Murphy, Taylor},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Implementation of a search for supersymmetry in the multijet (at least 8 jets) + missing energy channel (139/fb; 13 TeV; ATLAS-CONF-2020-002)}},\n    year = {2021},\n    version = {V1},\n    doi = {10.14428/DVN/0UHTPC},\n    url = {https://doi.org/10.14428/DVN/0UHTPC}\n}\n",
+            "@article{Carpenter:2021vga,\n    author = \"Carpenter, Linda M. and Murphy, Taylor and Smylie, Matthew J.\",\n    title = \"{$t\\bar{t}t\\bar{t}$ signatures through the lens of color-octet scalars}\",\n    eprint = \"2107.13565\",\n    archivePrefix = \"arXiv\",\n    primaryClass = \"hep-ph\",\n    month = \"7\",\n    year = \"2021\"\n}\n"
+        ]
     },
     {
         "name": "cms_b2g_12_012",
@@ -318,7 +356,9 @@
         "padversion": "v1.1",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{cms_b2g_12_012,\n    author = {Barducci, Daniele and Delaunay, Cedric},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Implementation of a search for top partners with charge 5/3 in the same-sign di-lepton channel (19.5 fb-1; 8 TeV; CMS-B2G-12-012)}},\n    year = {2021},\n    version = {V1},\n    doi = {10.14428/DVN/738G7F},\n    url = {https://doi.org/10.14428/DVN/738G7F}\n}\n"
+        ]
     },
     {
         "name": "cms_b2g_12_022",
@@ -336,7 +376,10 @@
         "padversion": "v1.1",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{cms_b2g_12_022,\n    author = {Fuks, Benjamin and Conte, Eric and Guo, Jun},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Implementation of a search for dark matter in the mono-top channel (19.7 fb-1; 8 TeV; CMS-B2G-12-022)}},\n    year = {2021},\n    version = {V1},\n    doi = {10.14428/DVN/DZYE3D},\n    url = {https://doi.org/10.14428/DVN/DZYE3D}\n}\n",
+            "@article{Cacciapaglia:2018rqf,\n    author = \"Cacciapaglia, Giacomo and Conte, Eric and Deandrea, Aldo and Fuks, Benjamin and Shao, Hua-Sheng\",\n    title = \"{LHC constraints and potential on resonant monotop production}\",\n    eprint = \"1811.03626\",\n    archivePrefix = \"arXiv\",\n    primaryClass = \"hep-ph\",\n    doi = \"10.1140/epjc/s10052-019-6675-x\",\n    journal = \"Eur. Phys. J. C\",\n    volume = \"79\",\n    number = \"2\",\n    pages = \"174\",\n    year = \"2019\"\n}\n"
+        ]
     },
     {
         "name": "cms_b2g_14_004",
@@ -354,7 +397,10 @@
         "padversion": "v1.1",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{cms_b2g_14_004,\n   author = {Fuks, Benjamin},\n   publisher = {Open Data @ UCLouvain},\n   title = {{Implementation of a search for dark matter production in association with a top quark pair (19.7 fb-1; 8 TeV; CMS-B2G-14-004)}},\n   year = {2021},\n   version = {V1},\n   doi = {10.14428/DVN/XCEOYB},\n   url = {https://doi.org/10.14428/DVN/XCEOYB}\n}\n",
+            "@article{Arina:2016cqj,\n    author = \"Arina, Chiara and others\",\n    title = \"{A comprehensive approach to dark matter studies: exploration of simplified top-philic models}\",\n    eprint = \"1605.09242\",\n    archivePrefix = \"arXiv\",\n    primaryClass = \"hep-ph\",\n    doi = \"10.1007/JHEP11(2016)111\",\n    journal = \"JHEP\",\n    volume = \"11\",\n    pages = \"111\",\n    year = \"2016\"\n}\n"
+        ]
     },
     {
         "name": "cms_b2g_17_014",
@@ -372,7 +418,9 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{cms_b2g_17_014,\n    author = {Salko, Jakub and Panizzi, Luca},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Implementation of a search for vector-like quarks with charge 5/3 in same-sign dilepton final states (35.9 fb-1; 13 TeV; CMS-B2G-17-014)}},\n    year = {2021},\n    version = {V1},\n    doi = {10.14428/DVN/DQZWYL},\n    url = {https://doi.org/10.14428/DVN/DQZWYL}\n}\n"
+        ]
     },
     {
         "name": "cms_exo_12_047",
@@ -390,7 +438,9 @@
         "padversion": "v1.1",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{cms_exo_12_047,\n    author = {Fuks, Benjamin and Conte, Eric and Guo, Jun},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Implementation of a search for dark matter in the mono-photon channel (19.6 fb-1; 8 TeV; CMS-EXO-12-047)}},\n    year = {2021},\n    version = {V1},\n    doi = {10.14428/DVN/UQOBWZ},\n    url = {https://doi.org/10.14428/DVN/UQOBWZ}\n}\n"
+        ]
     },
     {
         "name": "cms_exo_12_048",
@@ -408,7 +458,9 @@
         "padversion": "v1.1",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@articles{cms_exo_12_048,\n    author = {Fuks, Benjamin and Conte, Eric and Guo, Jun},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Implementation of a search for dark matter in the mono-jet channel (19.7 fb-1; 8 TeV; CMS-EXO-12-048)}},\n    year = {2021},\n    version = {DRAFT VERSION},\n    doi = {10.14428/DVN/Y63IQ5},\n    url = {https://doi.org/10.14428/DVN/Y63IQ5}\n}\n"
+        ]
     },
     {
         "name": "cms_exo_16_010",
@@ -426,7 +478,9 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{cms_exo_16_010,\n    author = {Fuks, Benjamin},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Implementation of a search for dark matter in the mono-Z channel (2.3 fb-1; 13 TeV; CMS-EXO-16-010)}},\n    year = {2021},\n    version = {V1},\n    doi = {10.14428/DVN/RSDO9W},\n    url = {https://doi.org/10.14428/DVN/RSDO9W}\n}\n"
+        ]
     },
     {
         "name": "cms_exo_16_012",
@@ -444,7 +498,9 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{cms_exo_16_012,\n    author = {Ahn, Seohyun; Park, Jiwon; Zhang, Wenxing},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Implementation of a search for dark matter in the mono-Higgs (to two photons) channel (2.3 fb-1; 13 TeV; CMS-EXO-16-012)}},\n    year = {2021},\n    version = {V1},\n    doi = {10.14428/DVN/YSQVX6},\n    url = {https://doi.org/10.14428/DVN/YSQVX6}\n}\n"
+        ]
     },
     {
         "name": "cms_exo_16_022",
@@ -462,7 +518,9 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{cms_exo_16_022,\n    author = {Chang, Jung},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Implementation of a search for a displaced lepton pair (2.6 fb-1; 13 TeV; CMS-EXO-16-022)}},\n    year = {2021},\n    version = {V1},\n    doi = {10.14428/DVN/C6B9V3},\n    url = {https://doi.org/10.14428/DVN/C6B9V3}\n}\n"
+        ]
     },
     {
         "name": "cms_exo_17_015",
@@ -480,7 +538,10 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{cms_exo_17_015,\n    author    = {Fuks, Benjamin and Jueid, Adil},\n    publisher = {Open Data @ UCLouvain},\n    title     = {{Re-implementation of a search for leptoquark and dark matter associated production in the 1 lepton + 1 jet channel (77 fb-1; CMS-EXO-17-015)}},\n    year      = {2020},\n    version   = {V2},\n    doi       = {10.14428/DVN/ICOXG9},\n    url       = {https://doi.org/10.14428/DVN/ICOXG9}\n}\n",
+            "@article{Fuks:2020xxz,\n    author = \"Fuks, Benjamin and Jueid, Adil\",\n    title = \"{Implementation of the CMS-EXO-17-015 analysis in the MadAnalysis 5 framework (leptoquark and dark matter with one muon, one jet and missing transverse energy; 77.4 fb$^{\u22121}$)}\",\n    doi = \"10.1142/S0217732321410029\",\n    journal = \"Mod. Phys. Lett. A\",\n    volume = \"36\",\n    number = \"01\",\n    pages = \"2141002\",\n    year = \"2021\"\n}\n"
+        ]
     },
     {
         "name": "cms_exo_17_030",
@@ -498,7 +559,10 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@data{cms_exo_17_030,\nauthor = {Kang, Yechan and Kim, Jihun and Choi, Jin and Yun, Soohyun},\npublisher = {Open Data @ UCLouvain},\ntitle = {{Implementation of a search for pair-produced resonances decaying each into a trijet system (36 fb-1; CMS-EXO-17-030)}},\nyear = {2020},\nversion = {V1},\ndoi = {10.14428/DVN/GAZACQ},\nurl = {https://doi.org/10.14428/DVN/GAZACQ}\n}\n",
+            "@article{Kang:2021kze,\n    author = \"Kang, Yechan and Kim, Jihun and Choi, Jin and Yun, Soohyun\",\n    title = \"{Implementation of the CMS-EXO-17-030 analysis in the MadAnalysis 5 framework (production of a pair of resonances decaying each into three jets; 35.9 fb$^{\u22121}$)}\",\n    doi = \"10.1142/S021773232141011X\",\n    journal = \"Mod. Phys. Lett. A\",\n    volume = \"36\",\n    number = \"01\",\n    pages = \"2141011\",\n    year = \"2021\"\n}\n"
+        ]
     },
     {
         "name": "cms_exo_19_002",
@@ -516,7 +580,9 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@data{cms_exo_19_002,\n    author = {Conte, Eric and Ducrocq, Robin},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Implementation of a search for new physics with multi-leptonic final states (137/fb; CMS-EXO-19-002)}},\n    year = {2021},\n    version = {V1},\n    doi = {10.14428/DVN/DTYUUE},\n    url = {https://doi.org/10.14428/DVN/DTYUUE}\n}\n"
+        ]
     },
     {
         "name": "cms_exo_20_004",
@@ -534,7 +600,9 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{cms_exo_20_004,\n    author = {Albert, Andreas},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Implementation of a search for new phenomena in events featuring energetic jets and missing transverse energy (137 fb-1; 13 TeV; CMS-EXO-20-004)}},\n    year = {2021},\n    version = {V1},\n    doi = {10.14428/DVN/IRF7ZL},\n    url = {https://doi.org/10.14428/DVN/IRF7ZL}\n}\n"
+        ]
     },
     {
         "name": "cms_hig_18_011",
@@ -552,7 +620,10 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@data{cms_hig_18_011,\n    author = {Lee, Joon-Bin and Lee, Jehyun},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Re-implementation of a search for Higgs boson exotic decays into 2 muons and 2 b-jets (35.9 fb-1; CMS-HIG-18-011)}},\n    year = {2020},\n    version = {V2},\n    doi = {10.14428/DVN/UOH6BF},\n    url = {https://doi.org/10.14428/DVN/UOH6BF}\n}\n",
+            "@article{Lee:2020cwl,\n    author = \"Lee, Joon-Bin and Lee, Jehyun\",\n    title = \"{Implementation of the CMS-HIG-18-011 analysis in the MadAnalysis 5 framework (exotic Higgs decays via two pseudoscalars with two muons and two $b$-jets; 35.9 fb$^{\u22121}$)}\",\n    doi = \"10.1142/S0217732321410030\",\n    journal = \"Mod. Phys. Lett. A\",\n    volume = \"36\",\n    number = \"01\",\n    pages = \"2141003\",\n    year = \"2021\"\n}\n"
+        ]
     },
     {
         "name": "cms_sus_16_033",
@@ -570,7 +641,9 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{cms_sus_16_033,\n    author = {Ambrogi, Federico and Sonneveld, Jory},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Implementation of a search for supersymmetry in the multi-jet + missing energy channel (35.9 fb-1; 13 TeV; CMS-SUS-16-033)}},\n    year = {2021},\n    version = {V1},\n    doi = {10.14428/DVN/GBDC91},\n    url = {https://doi.org/10.14428/DVN/GBDC91}\n}\n\n"
+        ]
     },
     {
         "name": "cms_sus_16_039",
@@ -588,7 +661,10 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{cms_sus_16_039,\n    author = {Fuks, Benjamin and Mondal, Subhadeep},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Implementation of a search for electroweakinos in the multi-lepton + missing energy channel (35.9 fb-1; 13 TeV; CMS-SUS-16-039)}},\n    year = {2021},\n    version = {V1},\n    doi = {10.14428/DVN/E8WN3G},\n    url = {https://doi.org/10.14428/DVN/E8WN3G}\n}\n",
+            "@article{Chatterjee:2018gca,\n    author = \"Chatterjee, Arindam and Frank, Mariana and Fuks, Benjamin and Huitu, Katri and Mondal, Subhadeep and Rai, Santosh Kumar and Waltari, Harri\",\n    title = \"{Multileptonic signals of co-annihilating left-right supersymmetric dark matter}\",\n    eprint = \"1810.03891\",\n    archivePrefix = \"arXiv\",\n    primaryClass = \"hep-ph\",\n    reportNumber = \"CUMQ/HEP 198, HIP-2018-20-TH, HIP-2018-20/TH, HRI-RECAPP-2018-11\",\n    doi = \"10.1103/PhysRevD.99.035017\",\n    journal = \"Phys. Rev. D\",\n    volume = \"99\",\n    number = \"3\",\n    pages = \"035017\",\n    year = \"2019\"\n}\n"
+        ]
     },
     {
         "name": "cms_sus_16_048",
@@ -606,7 +682,10 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{cms_sus_16_048,\n    author    = {Fuks, Benjamin},\n    publisher = {Open Data @ UCLouvain},\n    title     = {{Re-implementation of the soft lepton + missing energy analysis of CMS (35.9 fb-1; CMS-SUS-16-048)}},\n    year      = {2020},\n    version   = {V1},\n    doi       = {10.14428/DVN/YA8E9V},\n    url       = {https://doi.org/10.14428/DVN/YA8E9V}\n}\n",
+            "@article{Brooijmans:2020yij,\n    author = \"Brooijmans, G. and others\",\n    title = \"{Les Houches 2019 Physics at TeV Colliders: New Physics Working Group Report}\",\n    booktitle = \"{11th Les Houches Workshop on Physics at TeV Colliders}: {PhysTeV Les Houches}\",\n    eprint = \"2002.12220\",\n    archivePrefix = \"arXiv\",\n    primaryClass = \"hep-ph\",\n    month = \"2\",\n    year = \"2020\"\n}\n"
+        ]
     },
     {
         "name": "cms_sus_16_052",
@@ -624,7 +703,9 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{cms_sus_16_052,\n    author = {Sengupta, Dipan},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Implementation of a search for supersymmetry in the one lepton + jets + missing energy channel (35.9 fb-1; 13 TeV; CMS-SUS-16-052)}},\n    year = {2021},\n    version = {V1},\n    doi = {10.14428/DVN/DCAKIY},\n    url = {https://doi.org/10.14428/DVN/DCAKIY}\n}\n"
+        ]
     },
     {
         "name": "cms_sus_17_001",
@@ -642,7 +723,9 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{cms_sus_17_001,\n    author = {Bein, Samuel and Choi, Soo-Min and Fuks, Benjamin and Jeong, Soomin and Kang, Dong Woo and Li, Jinmian and Sonneveld, Jory},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Implementation of a search for stops in the di-lepton + missing energy channel (35.9 fb-1; 13 TeV; CMS-SUS-17-001)}},\n    year = {2021},\n    version = {V1},\n    doi = {10.14428/DVN/BQM0T3},\n    url = {https://doi.org/10.14428/DVN/BQM0T3}\n}\n"
+        ]
     },
     {
         "name": "cms_sus_19_006",
@@ -660,7 +743,10 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{cms_sus_19_006,\n    author = {Malte, Mrowietz and Bein, Sam and Sonneveld, Jory},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Re-implementation of a search for supersymmetry in the HT/missing HT channel (137 fb-1; CMS-SUSY-19-006)}},\n    year = {2020},\n    version = {V6},\n    doi = {10.14428/DVN/4DEJQM},\n    url = {https://doi.org/10.14428/DVN/4DEJQM}\n}\n",
+            "@article{Mrowietz:2020ztq,\n    author = \"Mrowietz, Malte and Bein, Sam and Sonneveld, Jory\",\n    title = \"{Implementation of the CMS-SUS-19-006 analysis in the MadAnalysis 5 framework (supersymmetry with large hadronic activity and missing transverse energy; 137 fb$^{\u22121}$)}\",\n    doi = \"10.1142/S0217732321410078\",\n    journal = \"Mod. Phys. Lett. A\",\n    volume = \"36\",\n    number = \"01\",\n    pages = \"2141007\",\n    year = \"2021\"\n}\n"
+        ]
     },
     {
         "name": "cms_top_17_009",
@@ -678,7 +764,9 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{cms_top_17_009,\n    author = {Darm\u00e9, Luc and Fuks, Benjamin},\n    publisher = {Open Data @ UCLouvain},\n    title = {{Implementation of a search for four-top quark production with leptonic final states (35.9 fb-1; 13 TeV; CMS-TOP-17-009)}},\n    year = {2021},\n    version = {V1},\n    doi = {10.14428/DVN/N8LVAH},\n    url = {https://doi.org/10.14428/DVN/N8LVAH}\n}\n"
+        ]
     },
     {
         "name": "cms_top_18_003",
@@ -696,6 +784,9 @@
         "padversion": "v1.2",
         "ma5version": "v1.9.60",
         "gcc": "98",
-        "bibtex": []
+        "bibtex": [
+            "@article{cms_top_18_003,\n    author    = {Darm\u00e9, Luc and Fuks, Benjamin},\n    publisher = {Open Data @ UCLouvain},\n    title     = {{Re-implementation of a search for four-top quark production with leptonic final states (137 fb-1; CMS-TOP-18-003)}},\n    year      = {2020},\n    version   = {V1},\n    doi       = {10.14428/DVN/OFAE1G},\n    url       = {https://doi.org/10.14428/DVN/OFAE1G}\n}\n",
+            "@article{Darme:2020hxc,\n    author = \"Darm\\'e, Luc and Fuks, Benjamin\",\n    title = \"{Implementation of the CMS-TOP-18-003 analysis in the MadAnalysis 5 framework (four top quarks with at least two leptons; 137 fb$^{\u22121}$)}\",\n    doi = \"10.1142/S021773232141008X\",\n    journal = \"Mod. Phys. Lett. A\",\n    volume = \"36\",\n    number = \"01\",\n    pages = \"2141008\",\n    year = \"2021\"\n}\n"
+        ]
     }
 ]
