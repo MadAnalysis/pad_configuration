@@ -388,7 +388,7 @@ class Configuration:
                     break
 
             jsonschema.validate(pad_data, Configuration._schema)
-            self.save(padname, pad_data)
+            self.save(self.padname, pad_data)
 
 
     def add_bibtex_info(self, analysis: Text, entry: Union[Sequence[Text], Text]):
@@ -437,7 +437,7 @@ class Configuration:
                     break
 
             jsonschema.validate(pad_data, Configuration._schema)
-            self.save(padname, pad_data)
+            self.save(self.padname, pad_data)
 
 
     @staticmethod
