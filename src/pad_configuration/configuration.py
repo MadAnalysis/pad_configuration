@@ -23,8 +23,8 @@
 
 import json
 import os
-from collections import namedtuple
-from typing import Text, NamedTuple, Sequence, Union, Optional, Dict
+from collections import namedtuple, OrderedDict
+from typing import Text, NamedTuple, Sequence, Union, Optional, Dict, Generator
 
 import jsonschema
 
@@ -64,8 +64,8 @@ class Configuration:
 
 
     def __init__(self, padname: Text, pad_data: Optional[Sequence[NamedTuple]] = None):
-        assert padname in ["PAD", "PADForMA5tune",
-                           "PADForSFS", ], f"Unknown PAD name: {padname}"
+        assert padname in ["PAD", "PADForMA5tune", "PADForSFS", ], \
+            f"Unknown PAD name: {padname}"
 
         self.padname = padname
 
@@ -81,10 +81,19 @@ class Configuration:
                 entry.update({"url": Configuration.URL(**entry["url"])})
                 self.pad_data.append(Configuration.PADEntry(**entry))
         else:
+            assert isinstance(pad_data, list) and \
+                   all([isinstance(x, Configuration.PADEntry) for x in pad_data]), \
+                "Unknown data type."
             self.pad_data = pad_data
 
 
-    def _asdict(self):
+    def _asdict(self) -> Sequence[Dict]:
+        """
+        Returns
+        -------
+        Sequence[Dict]:
+            PAD datastructure as dictionary
+        """
         to_return = []
         for entry in self.pad_data:
             entry = entry._asdict()
@@ -93,8 +102,25 @@ class Configuration:
         return to_return
 
 
-    def __getitem__(self, item: int):
-        return self.pad_data[item]
+    @property
+    def __dict__(self):
+        to_return = {}
+        for entry in self:
+            to_return.update({entry.name : entry})
+        return to_return
+
+
+    def __len__(self):
+        return len(self.pad_data)
+
+
+    def __getitem__(self, item: Union[int, Text]) -> NamedTuple:
+        if isinstance(item, int):
+            return self.pad_data[item]
+        elif isinstance(item, str):
+            return self.get_analysis(item)
+        else:
+            raise ValueError(f"Unknown item: {item}")
 
 
     def __iter__(self):
@@ -102,7 +128,13 @@ class Configuration:
             yield entry
 
 
-    def keys(self):
+    def keys(self) -> Generator:
+        """
+        Returns
+        -------
+        Generator:
+            Get all the analysis names available within current PAD config
+        """
         return (x.name for x in self)
 
 
@@ -160,15 +192,17 @@ class Configuration:
 
         Returns
         -------
-        NamedTuple
-            analysis metadata
+        NamedTuple or None
+            analysis metadata. Returns None if analysis does not exist.
         """
         for entry in self.pad_data:
             if entry.name == analysis:
                 return entry
 
+        return None
 
-    def get_collaboration(self, collaboration: Text) -> Sequence[NamedTuple]:
+
+    def get_collaboration(self, collaboration: Text) -> Generator:
         """
         Get the PAD metadata for a given collaboration
 
@@ -179,15 +213,12 @@ class Configuration:
 
         Returns
         -------
-        Sequence[get_collaboration]
+        Generator
             PAD metadata
         """
         assert collaboration in ["atlas", "cms"], f"Unknown collaboration: {collaboration}"
-        collab = []
-        for entry in self.pad_data:
-            if collaboration in entry.name:
-                collab.append(entry)
-        return collab
+        return (entry for entry in self if collaboration in entry.name)
+
 
 
     @staticmethod
@@ -212,8 +243,8 @@ class Configuration:
             invalid PAD name
             invalid entry type
         """
-        assert padname in ["PAD", "PADForMA5tune",
-                           "PADForSFS", ], f"Unknown PAD name: {padname}"
+        assert padname in ["PAD", "PADForMA5tune", "PADForSFS"], \
+            f"Unknown PAD name: {padname}"
 
         if isinstance(new_entry, dict):
             new_entry = [new_entry]
@@ -256,7 +287,39 @@ class Configuration:
             json.dump(pad_data, f, indent = 4)
 
 
-    def add_json_info(self, analysis: Text, entry: Sequence[Dict]):
+    def add_json_info(self, analysis: Text, entry: Union[Sequence[Dict], Dict]) -> None:
+        """
+        Add information about full likelihood json files. Data structure:
+
+        .. code-block:: python
+
+            entry = [
+                {
+                    "name" : "name of the json extension",
+                    "url" : "location of the json file for full likelihoods"
+                }
+            ]
+
+        Parameters
+        ----------
+        analysis : Text
+            Analysis name
+        entry : Union[Sequence[Dict], Dict]
+            json file entry. Multiple files can be given as different dictionaries. Dictionary
+            keys must be "name" and "url" where name indicates the extension of the file e.g.
+            if the json file name is `atlas_susy_2018_31_SRA.json` name is only "SRA".
+            url is the full location url of the json file.
+
+        Raises
+        ------
+        AssertionError:
+            if entry is not dict or list type or if analysis does not exist in current data
+            structure.
+        jsonschema.exceptions.ValidationError:
+            invalid new entry
+        jsonschema.exceptions.SchemaError:
+            invalid new entry
+        """
         if isinstance(entry, dict):
             entry = [entry]
         assert isinstance(entry, list), "Unknown entry type."
@@ -275,16 +338,65 @@ class Configuration:
             for idx, data_entry in enumerate(pad_data):
                 if data_entry["name"] == analysis:
                     pad_data[idx]["url"]["json"] += valid
-                    print(pad_data[idx]["url"]["json"])
+                    break
 
             jsonschema.validate(pad_data, Configuration._schema)
             with open(Configuration._paddata[self.padname], "w") as f:
                 json.dump(pad_data, f, indent = 4)
 
 
+    def add_bibtex_info(self, analysis: Text, entry: Union[Sequence[Text], Text]):
+        """
+        Add bibliography. Data structure:
+
+        .. code-block:: python
+
+            entry = ["bibliography dedicated to the analysis", ]
+
+        Parameters
+        ----------
+        analysis : Text
+            Analysis name
+        entry : Union[Sequence[Text], Text]
+            bibtex entry.
+
+        Raises
+        ------
+        AssertionError:
+            if entry is not str or list type or if analysis does not exist in current data
+            structure.
+        jsonschema.exceptions.ValidationError:
+            invalid new entry
+        jsonschema.exceptions.SchemaError:
+            invalid new entry
+        """
+        if isinstance(entry, str):
+            entry = [entry]
+        assert isinstance(entry, list), "Unknown entry type."
+        assert analysis in list(self.keys()), f"Unknown analysis: {analysis}"
+
+        # Validate
+        valid = []
+        for ent in entry:
+            if not isinstance(ent, str):
+                print("Corrupt entry: " + ent)
+                continue
+            valid.append(ent)
+
+        if len(valid) > 0:
+            pad_data = self._asdict()
+            for idx, data_entry in enumerate(pad_data):
+                if data_entry["name"] == analysis:
+                    pad_data[idx]["bibtex"] += valid
+                    break
+
+            jsonschema.validate(pad_data, Configuration._schema)
+            with open(Configuration._paddata[self.padname], "w") as f:
+                json.dump(pad_data, f, indent = 4)
+
     @staticmethod
     @property
-    def entry_example():
+    def entry_example() -> Sequence[Dict]:
         return [{
             "name"         : "analysis name", "description": "analysis description", "url": {
                 "cpp"         : "location of the code",
@@ -300,6 +412,44 @@ class Configuration:
         }]
 
 
+    def recast_config(self) -> Text:
+        """
+        Returns recast_config.dat file in str format
+
+        Returns
+        -------
+        Text
+        """
+        def add_analysis(detector_dict, entry):
+            if entry.url.detector["name"] in list(detector_cards.keys()):
+                detector_cards.update(
+                    {
+                        entry.url.detector["name"] : \
+                            detector_cards[entry.url.detector["name"]] + [entry.name]
+                    }
+                )
+                [entry.url.detector["name"]].append(entry.name)
+            else:
+                detector_cards.update({entry.url.detector["name"] : [entry.name]})
+
+        detector_cards = OrderedDict()
+        for entry in self.get_collaboration("atlas"):
+            add_analysis(detector_cards, entry)
+        for entry in self.get_collaboration("cms"):
+            add_analysis(detector_cards, entry)
+
+        txt = "#             detector card             | Analyses\n" \
+              "#                                       |\n"
+
+        for card, analysis_list in detector_cards.items():
+            card_name = "delphes_card_" if self.padname in ["PAD", "PADForMA5tune"] else "sfs_card_"
+            card_name += card + (self.padname in ["PAD", "PADForMA5tune"])*".tcl" + \
+                         (self.padname == "PADForSFS")*".ma5"
+            txt += card_name.ljust(40, " ")
+            txt += "| " + "   ".join(analysis_list) + "\n"
+        return txt
+
+
     def __str__(self):
         txt = "#    Analysis            | Description\n" + "#                        |\n"
         for entry in self.get_collaboration("atlas"):
@@ -307,3 +457,7 @@ class Configuration:
         for entry in self.get_collaboration("cms"):
             txt += entry.name.ljust(25, " ") + "| " + entry.description + "\n"
         return txt
+
+
+    def __repr__(self):
+        return self.__str__()
