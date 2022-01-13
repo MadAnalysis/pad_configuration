@@ -153,6 +153,80 @@ config = Configuration("PADForSFS")
 config.add_bibtex_info("atlas_susy_2017_04", bibentry)
 ```
 
+# Available Analyses
+
+For details on validation notes, [see our website](http://madanalysis.irmp.ucl.ac.be/wiki/PublicAnalysisDatabase).
+
+### PAD for SFS
+|        Analysis         | Description|
+|:-----------------------:|------------|
+|   atlas_exot_2018_05    | ATLAS - 13 TeV - di-jet resonance with a photon (76.8/fb)|
+|   atlas_susy_2016_07    | ATLAS - 13 TeV - multijet + met (36.1/fb)|
+|atlas_susy_2017_04_2body | ATLAS - 13 TeV - displaced vertices with opposite charge leptons, 2-body decays (32.8/fb)|
+|atlas_susy_2017_04_3body | ATLAS - 13 TeV - displaced vertices with opposite charge leptons, 3-body decays (32.8/fb)|
+|   atlas_susy_2018_31    | ATLAS - 13 TeV - multibottoms + MET (139/fb)|
+|   atlas_conf_2019_040   | ATLAS - 13 TeV - multijet + met (139/fb)|
+|     cms_sus_16_048      | CMS   - 13 TeV - Soft dilepton (35.9/fb)|
+|     cms_exo_16_022      | CMS   - 13 TeV - Displaced leptons (2.6/fb)|
+
+### PAD:
+|        Analysis         | Description|
+|:-----------------------:|------------|
+|   atlas_exot_2014_06    | ATLAS -  8 TeV - Mono-photon (20.3/fb)|
+|   atlas_exot_2015_03    | ATLAS - 13 TeV - Mono-jet (3.2/fb)|
+|   atlas_exot_2016_25    | ATLAS - 13 TeV - Mono-Higgs in the bbar channel (36.1/fb)|
+|   atlas_exot_2016_27    | ATLAS - 13 TeV - Mono-jet (36.1/fb)|
+|   atlas_exot_2016_32    | ATLAS - 13 TeV - Mono-photon (36.1/fb)|
+|   atlas_exot_2018_30    | ATLAS - 13 TeV - W' into lepton + neutrino (139/fb)|
+|   atlas_susy_2015_06    | ATLAS - 13 TeV - Multi-jet + met (2-6 jets, 3.2/fb)|
+|   atlas_susy_2016_07    | ATLAS - 13 TeV - Multi-jet + met (36.1/fb)|
+|   atlas_susy_2018_04    | ATLAS - 13 TeV - Staus in the ditau + met channel (139/fb)|
+|   atlas_susy_2018_17    | ATLAS - 13 TeV - At least 8 jets + met (139/fb)|
+|   atlas_susy_2018_06    | ATLAS - 13 TeV - Electroweakinos with jigsaw variables (139/fb)|
+|   atlas_susy_2018_32    | ATLAS - 13 TeV - Sleptons/ewkinos with 2l+met (139/fb)|
+|   atlas_susy_2019_08    | ATLAS - 13 TeV - H (in bbar) + lepton + met (139/fb)|
+|   atlas_conf_2016_086   | ATLAS - 13 TeV - Dark matter production with a bbar pair (13.3/fb)|
+|   atlas_conf_2019_040   | ATLAS - 13 TeV - Multi-jet + met (139/fb)|
+|   atlas_conf_2020_002   | ATLAS - 13 TeV - At least 8 jets + met (139/fb)|
+|     cms_b2g_12_012      | CMS   -  8 TeV - X_{5/3} partners in the SS2L channel (19.5/fb)|
+|     cms_b2g_12_022      | CMS   -  8 TeV - Hadronic monotops (19.7/fb)|
+|     cms_b2g_14_004      | CMS   -  8 TeV - Dark matter production with a ttbar pair (19.7/fb)|
+|     cms_b2g_17_014      | CMS   - 13 TeV - Vector-like quarks with charge 5/3 with same-sign dileptons (35.9/fb)|
+|     cms_exo_12_047      | CMS   -  8 TeV - Mono-photon (19.6/fb)|
+|     cms_exo_12_048      | CMS   -  8 TeV - Mono-jet (19.7/fb)|
+|     cms_exo_16_010      | CMS   - 13 TeV - Mono-Z (2.3/fb)|
+|     cms_exo_16_012      | CMS   - 13 TeV - Mono-Higgs in the diphoton channel (2.3/fb)|
+|     cms_exo_16_022      | CMS   - 13 TeV - Displaced leptons (2.6/fb)|
+|     cms_exo_17_015      | CMS   - 13 TeV - Leptoquark+DM in the 1 mu+1jet + met channel (77.4/fb)|
+|     cms_exo_17_030      | CMS   - 13 TeV - Pairs of resonances decaying into a trijet system (35.9/fb)|
+|     cms_exo_19_002      | CMS   - 13 TeV - Type III seesaw and top-philic scalars with multi-leptonic probes (137/fb)|
+|     cms_exo_20_004      | CMS   - 13 TeV - Mono-jet (137/fb)|
+|     cms_hig_18_011      | CMS   - 13 TeV - Exotic Higgs decays (H to aa to 2mu 2b) (35.9/fb)|
+|     cms_sus_16_033      | CMS   - 13 TeV - Supersymmetry in the multi-jets + met channel (35.9/fb)|
+|     cms_sus_16_039      | CMS   - 13 TeV - Electroweakinos in the multi-leptons + met channel (35.9/fb)|
+|     cms_sus_16_048      | CMS   - 13 TeV - Supersymmetry in the one soft leptons + met channel (35.9/fb)|
+|     cms_sus_16_052      | CMS   - 13 TeV - Supersymmetry in the 1 lepton + jets +met channel (35.9/fb)|
+|     cms_sus_17_001      | CMS   - 13 TeV - stops in the OS2L + jets + MET channel (35.9/fb)|
+|     cms_sus_19_006      | CMS   - 13 TeV - SUSY in the HT / missing HT channel (137/fb)|
+|     cms_top_17_009      | CMS   - 13 TeV - 4top analysis in the SS2L and multilepton channel (35.9/fb)|
+|     cms_top_18_003      | CMS   - 13 TeV - 4top analysis in the SS2L and multilepton channel (137/fb)|
+
+### PAD for Ma5 Tune
+
+|        Analysis         | Description|
+|:-----------------------:|------------|
+|   atlas_higg_2013_03    | ATLAS - 8 TeV - ZH in the invisible + 2 leptons channel (20.3/fb)|
+|   atlas_susy_2013_02    | ATLAS - 8 TeV - squark-gluino in the 0 leptons + 2-6 jets + met channel (20.3/fb)|
+|   atlas_susy_2013_04    | ATLAS - 8 TeV - multijet + met (20.3/fb)|
+|   atlas_susy_2013_05    | ATLAS - 8 TeV - stops/sbottoms in the 0-lepton + 2-bjets + met channel (20.1/fb)|
+|   atlas_susy_2013_11    | ATLAS - 8 TeV - ewkinos in the 2 leptons + met channel (20.3/fb)|
+|   atlas_susy_2013_21    | ATLAS - 8 TeV - susy in the mono-jet and c-jets+MET channels (20.3/fb)|
+|   atlas_susy_2014_10    | ATLAS - 8 TeV - squark-gluino in the 2 leptons + jets + met channel (20.3/fb)|
+|     cms_sus_13_011      | CMS   - 8 TeV - stop in the single lepton + met channel (19.5/fb)|
+|     cms_sus_13_012      | CMS   - 8 TeV - squark-gluino in the MET/MHT channel (19.5/fb)|
+|     cms_sus_13_016      | CMS   - 8 TeV - gluinos in the 2 leptons + bjets + met channel (19.7/fb)|
+| cms_sus_14_001_monojet  | CMS   - 8 TeV - stop in the monojet channel (19.7/fb)|
+
 ## TODO
  - [x] Expand the documentations
  - [x] Add individual bibliographies to each entry
