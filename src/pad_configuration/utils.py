@@ -1,10 +1,29 @@
-import base64
-import json
-import zlib
+################################################################################
+#
+#  Copyright (C) 2012-2022 Jack Araz, Eric Conte & Benjamin Fuks
+#  The MadAnalysis development team, email: <ma5team@iphc.cnrs.fr>
+#
+#  This file is part of MadAnalysis 5.
+#  Official website: <https://github.com/MadAnalysis/madanalysis5>
+#
+#  MadAnalysis 5 is free software: you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation, either version 3 of the License, or
+#  (at your option) any later version.
+#
+#  MadAnalysis 5 is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with MadAnalysis 5. If not, see <http://www.gnu.org/licenses/>
+#
+################################################################################
+
+import base64, json, zlib, datetime
 
 from typing import Dict, Union, Sequence
-
-ZIPJSON_KEY = 'base64(zip(o))'
 
 
 def json_zip(json_input: Union[Dict, Sequence[Dict]]) -> Dict:
@@ -20,13 +39,12 @@ def json_zip(json_input: Union[Dict, Sequence[Dict]]) -> Dict:
     Dict:
         Compressed input
     """
-    json_output = {
-        ZIPJSON_KEY: base64.b64encode(
-            zlib.compress(json.dumps(json_input).encode('utf-8'))
-        ).decode('ascii')
-    }
+    json_output = base64.b64encode(
+        zlib.compress(json.dumps(json_input).encode('utf-8'))
+    ).decode('ascii')
 
-    return json_output
+    time = datetime.datetime.now().astimezone().strftime("%B %d, %Y - %H:%M:%S %Z")
+    return f"# Ma5 - PAD metadata created on {time}\n" + json_output
 
 
 def json_unzip(json_input, insist: bool = True) -> Dict:
@@ -45,21 +63,14 @@ def json_unzip(json_input, insist: bool = True) -> Dict:
     Raises
     ------
     RuntimeError:
-        if JSON input does not have `base64(zip(o))` key or its not possible to decode the file
+        if its not possible to decode the file
+    AssertionError
+        Invalid file format
     """
-    try:
-        assert json_input.get(ZIPJSON_KEY, False) != False
-        assert (set(json_input.keys()) == {ZIPJSON_KEY})
-    except:
-        if insist:
-            raise RuntimeError(
-                "JSON not in the expected format {" + str(ZIPJSON_KEY) + ": zipstring}"
-            )
-        else:
-            return json_input
+    assert json_input[0].startswith("# Ma5 - PAD metadata created on"), "Unknown entry."
 
     try:
-        json_input = zlib.decompress(base64.b64decode(json_input[ZIPJSON_KEY]))
+        json_input = zlib.decompress(base64.b64decode(json_input[1]))
     except:
         raise RuntimeError("Could not decode/unzip the contents")
 

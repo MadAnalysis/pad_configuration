@@ -101,13 +101,13 @@ class Configuration:
     def _compress(filename: Text, json_input: Union[Sequence[Dict], Dict]) -> None:
         compressed_pad_data = json_zip(json_input)
         with open(filename, "w") as f:
-            json.dump(compressed_pad_data, f)
+            f.write(compressed_pad_data)
 
 
     @staticmethod
     def _decompress(filename: Text) -> Union[Sequence[Dict], Dict]:
         with open(filename, "r") as f:
-            output = json_unzip(json.load(f))
+            output = json_unzip(f.readlines())
         return output
 
 
