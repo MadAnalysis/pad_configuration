@@ -26,6 +26,8 @@ import os
 from collections import namedtuple, OrderedDict
 from typing import Text, NamedTuple, Sequence, Union, Optional, Dict, Generator
 
+from .utils import json_zip, json_unzip
+
 import jsonschema
 
 
@@ -64,8 +66,7 @@ class Configuration:
 
 
     def __init__(self, padname: Text, pad_data: Optional[Sequence[NamedTuple]] = None):
-        assert padname in ["PAD", "PADForMA5tune", "PADForSFS", ], \
-            f"Unknown PAD name: {padname}"
+        assert padname in ["PAD", "PADForMA5tune", "PADForSFS"], f"Unknown PAD name: {padname}"
 
         self.padname = padname
 
@@ -74,6 +75,15 @@ class Configuration:
             if os.path.isfile(Configuration._paddata[padname]):
                 with open(Configuration._paddata[padname], "r") as tmp:
                     tmp_json = json.load(tmp)
+            elif os.path.isfile(Configuration._paddata[padname].split(".")[0] + ".jz"):
+                tmp_json = self._decompress(
+                    Configuration._paddata[padname].split(".")[0] + ".jz"
+                )
+            else:
+                raise FileNotFoundError(
+                    f"Can not find metadata files: \n\t"
+                    f" - {Configuration._paddata[padname]}\n\t"
+                    f" - {Configuration._paddata[padname].split('.')[0]}.jz")
 
             self.pad_data = []
             for entry in tmp_json:
@@ -85,6 +95,44 @@ class Configuration:
                    all([isinstance(x, Configuration.PADEntry) for x in pad_data]), \
                 "Unknown data type."
             self.pad_data = pad_data
+
+
+    @staticmethod
+    def _compress(filename: Text, json_input: Union[Sequence[Dict], Dict]) -> None:
+        compressed_pad_data = json_zip(json_input)
+        with open(filename, "w") as f:
+            json.dump(compressed_pad_data, f)
+
+
+    @staticmethod
+    def _decompress(filename: Text) -> Union[Sequence[Dict], Dict]:
+        with open(filename, "r") as f:
+            output = json_unzip(json.load(f))
+        return output
+
+
+    @staticmethod
+    def save(
+            padname: Text, json_input: Union[Sequence[Dict], Dict], compress: bool = True
+    ) -> None:
+        """
+        Save current PAD configuration
+
+        Parameters
+        ----------
+        padname: Text
+            name of the PAD
+        json_input: Union[Sequence[Dict], Dict]
+            PAD metadata
+        compress : bool
+            Should data be compressed?
+        """
+        if compress:
+            filename = Configuration._paddata[padname].split(".")[0] + ".jz"
+            Configuration._compress(filename, json_input)
+        else:
+            with open(Configuration._paddata[padname], "w") as f:
+                json.dump(json_input, f, indent = 4)
 
 
     def _asdict(self) -> Sequence[Dict]:
@@ -283,8 +331,7 @@ class Configuration:
         else:
             pad_data = new_entries
 
-        with open(Configuration._paddata[padname], "w") as f:
-            json.dump(pad_data, f, indent = 4)
+        Configuration.save(padname, pad_data)
 
 
     def add_json_info(self, analysis: Text, entry: Union[Sequence[Dict], Dict]) -> None:
@@ -341,8 +388,7 @@ class Configuration:
                     break
 
             jsonschema.validate(pad_data, Configuration._schema)
-            with open(Configuration._paddata[self.padname], "w") as f:
-                json.dump(pad_data, f, indent = 4)
+            self.save(padname, pad_data)
 
 
     def add_bibtex_info(self, analysis: Text, entry: Union[Sequence[Text], Text]):
@@ -391,8 +437,8 @@ class Configuration:
                     break
 
             jsonschema.validate(pad_data, Configuration._schema)
-            with open(Configuration._paddata[self.padname], "w") as f:
-                json.dump(pad_data, f, indent = 4)
+            self.save(padname, pad_data)
+
 
     @staticmethod
     @property
