@@ -139,7 +139,7 @@ add this entry to the relevant place;
 config = Configuration("PADForSFS")
 config.add_json_info("atlas_susy_2018_31", json_entry)
 ```
-This will automatically update the relevant file and analysis, but will not update the current configuration.
+This will automatically update the relevant file and analysis.
 
 ### Adding Bibliography information
 Same as before bibliography can be added with the entry in `entry["bibtex"]` section but it can also be added separately 
@@ -152,6 +152,14 @@ bibentry = [
 config = Configuration("PADForSFS")
 config.add_bibtex_info("atlas_susy_2017_04", bibentry)
 ```
+
+### Write Bibliography
+It is possible to write a bibliography file for a collection of entries;
+```python
+config = Configuration("PADForSFS") + Configuration("PAD")
+config.write_bibtex("my_bibliography.bib", ["atlas_susy_2018_31", "atlas_susy_2015_06"])
+```
+which will print all the necessary bibliography information into `my_bibliography.bib` file.
 
 # Available Analyses
 
@@ -168,8 +176,9 @@ For details on validation notes, [see our website](http://madanalysis.irmp.ucl.a
 |   atlas_conf_2019_040   | ATLAS - 13 TeV - multijet + met (139/fb)|
 |     cms_sus_16_048      | CMS   - 13 TeV - Soft dilepton (35.9/fb)|
 |     cms_exo_16_022      | CMS   - 13 TeV - Displaced leptons (2.6/fb)|
+|     cms_exo_19_010      | CMS   - 13 TeV - Disappearing tracks (140/fb)|
 
-### PAD:
+### PAD
 |        Analysis         | Description|
 |:-----------------------:|------------|
 |   atlas_exot_2014_06    | ATLAS -  8 TeV - Mono-photon (20.3/fb)|
@@ -226,6 +235,7 @@ For details on validation notes, [see our website](http://madanalysis.irmp.ucl.a
 |     cms_sus_13_012      | CMS   - 8 TeV - squark-gluino in the MET/MHT channel (19.5/fb)|
 |     cms_sus_13_016      | CMS   - 8 TeV - gluinos in the 2 leptons + bjets + met channel (19.7/fb)|
 | cms_sus_14_001_monojet  | CMS   - 8 TeV - stop in the monojet channel (19.7/fb)|
+|  cms_sus_14_001_toptag  | CMS   - 8 TeV - stops in the top-tagging channel (19.7/fb)|
 
 ## TODO
  - [x] Expand the documentations

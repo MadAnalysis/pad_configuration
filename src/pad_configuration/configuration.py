@@ -72,6 +72,7 @@ class Configuration:
         self.padname = padname
 
         if pad_data is None:
+            assert padname != "combined", "Combined configuration requires independent data."
             tmp_json = []
             if os.path.isfile(Configuration._paddata[padname]):
                 with open(Configuration._paddata[padname], "r") as tmp:
@@ -160,6 +161,18 @@ class Configuration:
 
 
     def entry_asdict(self, analysis: Text) -> Dict:
+        """
+        get an entry as a mutable dictionary
+
+        Parameters
+        ----------
+        analysis : Text
+            analysis name
+
+        Returns
+        -------
+        Dict
+        """
         entry = self[analysis]
         if entry is not None:
             entry_dict = entry._asdict()
