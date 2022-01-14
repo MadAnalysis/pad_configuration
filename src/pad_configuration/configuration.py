@@ -26,9 +26,9 @@ import os
 from collections import namedtuple, OrderedDict
 from typing import Text, NamedTuple, Sequence, Union, Optional, Dict, Generator
 
-from .utils import json_zip, json_unzip
-
 import jsonschema
+
+from .utils import json_zip, json_unzip
 
 
 class Configuration:
@@ -66,7 +66,8 @@ class Configuration:
 
 
     def __init__(self, padname: Text, pad_data: Optional[Sequence[NamedTuple]] = None):
-        assert padname in ["PAD", "PADForMA5tune", "PADForSFS"], f"Unknown PAD name: {padname}"
+        assert padname in ["PAD", "PADForMA5tune", "PADForSFS", "combined"], \
+            f"Unknown PAD name: {padname}"
 
         self.padname = padname
 
@@ -126,7 +127,15 @@ class Configuration:
             PAD metadata
         compress : bool
             Should data be compressed?
+
+        Raises
+        ------
+        AssertionError
+            for wrong padname.
         """
+        assert padname in ["PAD", "PADForMA5tune", "PADForSFS"], \
+            f"Configuration can only be saved if padname is PAD, PADForMA5tune or PADForSFS"
+
         if compress:
             filename = Configuration._paddata[padname].split(".")[0] + ".jz"
             Configuration._compress(filename, json_input)
@@ -150,6 +159,55 @@ class Configuration:
         return to_return
 
 
+    def entry_asdict(self, analysis: Text) -> Dict:
+        entry = self[analysis]
+        if entry is not None:
+            entry_dict = entry._asdict()
+            entry_dict.update({"url" : entry["url"]._asdict()})
+            return entry_dict
+
+
+    def update_entry(self, analysis: Text, entry: Union[Sequence[Dict], Dict]) -> None:
+        """
+        Update a PAD entry
+
+        Parameters
+        ----------
+        analysis : Text
+            analysis name given as in PAD metadata
+        entry : Union[Sequence[Dict], Dict]
+            Full entry information as dictionary or list
+
+        Raises
+        ------
+        AssertionError
+            If analysis does not exist, entry is neither list nor dict or more than one entry
+            given.
+        jsonschema.exceptions.ValidationError:
+            invalid new entry
+        jsonschema.exceptions.SchemaError:
+            invalid new entry
+        """
+        assert analysis in list(self.keys()), f"Can't find {analysis} in {self.padname}."
+        if isinstance(entry, dict):
+            new_entry = [entry]
+        assert isinstance(new_entry, list), "Unknown entry type."
+        assert len(entry) == 1, f"Only one entry expected, got {len(entry)}."
+
+        jsonschema.validate(new_entry, Configuration._schema)
+        pad_data = self._asdict()
+        for idx, entry in enumerate(pad_data):
+            if entry["name"] == analysis:
+                break
+        pad_data[idx] = new_entry[0]
+
+        jsonschema.validate(pad_data, Configuration._schema)
+        Configuration.save(self.padname, pad_data)
+
+        # Reinitialize the current configuration
+        self.__init__(self.padname)
+
+
     @property
     def __dict__(self):
         to_return = {}
@@ -159,6 +217,13 @@ class Configuration:
 
 
     def __len__(self):
+        """
+        Length of the current configuration.
+
+        Returns
+        -------
+        int
+        """
         return len(self.pad_data)
 
 
@@ -390,6 +455,9 @@ class Configuration:
             jsonschema.validate(pad_data, Configuration._schema)
             self.save(self.padname, pad_data)
 
+            # Reinitialize current config
+            self.__init__(self.padname)
+
 
     def add_bibtex_info(self, analysis: Text, entry: Union[Sequence[Text], Text]):
         """
@@ -438,6 +506,9 @@ class Configuration:
 
             jsonschema.validate(pad_data, Configuration._schema)
             self.save(self.padname, pad_data)
+
+            # Reinitialize current config
+            self.__init__(self.padname)
 
 
     @staticmethod
@@ -494,6 +565,51 @@ class Configuration:
             txt += card_name.ljust(40, " ")
             txt += "| " + "   ".join(analysis_list) + "\n"
         return txt
+
+
+    def write_bibtex(self,filename: Text, analyses: Union[Sequence[Text], Text]) -> None:
+        """
+        Write bibtex file for given analyses
+
+        Parameters
+        ----------
+        filename : Text
+            to where this file needs to be saved with ".bib" extension.
+        analyses : Union[Sequence[Text], Text]
+            name of the analyses one or more.
+
+        Raises
+        ------
+        AssertionError
+            If analysis does not exist within current configuration
+        """
+        with open(
+                os.path.join(Configuration._currentpath, "meta", "common_bibliography.bib"),
+                "r"
+        ) as f:
+            bibliography = f.read()
+        bibliography += "\n\n\n\n%%%%%%%%%%%%%%%%%%%\n%    Analyses    " \
+                        "%%\n%%%%%%%%%%%%%%%%%%%\n\n\n"
+
+        analysis_list = list(self.keys())
+        if isinstance(analyses, str):
+            assert analyses in analysis_list, f"Unknown analysis: {analyses}"
+            for bib in self[analyses].bibtex:
+                bibliography += bib + "\n\n\n"
+        elif isinstance(analyses, (list, tuple)):
+            for analysis in analyses:
+                if analysis not in analysis_list:
+                    continue
+                for bib in self[analysis].bibtex:
+                    bibliography += bib + "\n\n\n"
+
+        with open(filename, "w") as bib:
+            bib.write(bibliography)
+
+
+    def __add__(self, other):
+        assert isinstance(other, Configuration), "Unknown type."
+        return Configuration("combined", self.pad_data + other.pad_data)
 
 
     def __str__(self):
